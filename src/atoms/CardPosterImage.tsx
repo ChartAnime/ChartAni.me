@@ -1,11 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-
-interface CardPosterImageProps {
-    url: string;
-    height?: number;
-    width?: number;
-}
+import { CardPosterImageProps } from 'types/Poster'
 
 class CardPosterImage extends React.Component<CardPosterImageProps> {
 
