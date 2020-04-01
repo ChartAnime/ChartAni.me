@@ -1,28 +1,56 @@
 import React from 'react';
-import { AnimeCardProps } from 'types/Anime';
-import MainTitle from 'atoms/MainTitle';
-import CardPosterImage from 'atoms/CardPosterImage';
-import './AnimeCard.scss';
-import Tags from 'molecules/Tags';
+import { Card, CardMedia, CardContent, makeStyles, createStyles, CardActionArea } from '@material-ui/core';
+import LazyLoad from 'react-lazyload';
 
-class AnimeCard extends React.Component<AnimeCardProps> {
+const useStyles = makeStyles(({ spacing }) =>
+	createStyles({
+		root: {
+			display: 'flex'
+		},
+		media: {
+			/*width: '175px',
+			maxWidth: '175px',
+			height: '250px',
+			maxHeight: '250px',*/
+			position: 'absolute',
+			verticalAlign: 'middle',
+			left: 'auto',
+			display: 'inline-block',
+			/*'&:after': {
+				width: '175px',
+				maxWidth: '175px',
+				height: '250px',
+				maxHeight: '250px'
+			}*/
+		},
+		content: {
 
-	public render() {
-		return (
-			<article className="anime">
-				<div className="anime-card">
-					<MainTitle name={this.getName} />
-					<Tags items={[{text: '1'}, {text: '2'}]} />
-					<CardPosterImage url="https://u.livechart.me/anime/3110/poster_image/205556ff45a01e2978278340fcb6534f.png?style=small&format=jpg" />
-				</div>
-			</article>
-		);
-	}
+		}
+	})
+);
 
-	public get getName(): string {
-		return this.props.name.english;
-	}
-
+export default () => {
+	const styles = useStyles();
+	return (
+		<Card className={styles.root} variant='outlined'>
+			<div>
+			</div>
+			<div>
+				<LazyLoad height={250}>
+					<CardMedia
+						className={styles.media}
+						component={'img'}
+						height={250}
+						width={175}
+						src={'https://u.livechart.me/anime/3555/poster_image/a7f61a474b71763ed8be35d41407c611.png?style=small&format=jpg'}
+					/>
+				</LazyLoad>
+				<CardContent className={styles.content}>
+					Test
+					</CardContent>
+			</div>
+			<CardActionArea>
+			</CardActionArea>
+		</Card>
+	);
 }
-
-export default AnimeCard;
