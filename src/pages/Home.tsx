@@ -26,6 +26,10 @@ const useStyles = makeStyles(() =>
 export default () => {
 	const styles = useStyles();
 	return (
-		<AnimeCard />
+		<Grid container direction={'row'}>
+			<AnimeCard />
+			<AnimeCard />
+			<AnimeCard />
+		</Grid>
 	);
 }

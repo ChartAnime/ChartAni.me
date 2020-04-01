@@ -1,30 +1,19 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, makeStyles, createStyles, CardActionArea } from '@material-ui/core';
+import { Card, CardMedia, CardContent, makeStyles, createStyles, CardActionArea, Grid } from '@material-ui/core';
 import LazyLoad from 'react-lazyload';
+import MainTitle from 'atoms/MainTitle';
 
 const useStyles = makeStyles(({ spacing }) =>
 	createStyles({
 		root: {
-			display: 'flex'
+			flexGrow: 1
 		},
 		media: {
-			/*width: '175px',
-			maxWidth: '175px',
 			height: '250px',
-			maxHeight: '250px',*/
-			position: 'absolute',
-			verticalAlign: 'middle',
-			left: 'auto',
-			display: 'inline-block',
-			/*'&:after': {
-				width: '175px',
-				maxWidth: '175px',
-				height: '250px',
-				maxHeight: '250px'
-			}*/
+			width: '175px'
 		},
-		content: {
-
+		title: {
+			textAlign: 'center'
 		}
 	})
 );
@@ -32,25 +21,24 @@ const useStyles = makeStyles(({ spacing }) =>
 export default () => {
 	const styles = useStyles();
 	return (
-		<Card className={styles.root} variant='outlined'>
-			<div>
-			</div>
-			<div>
-				<LazyLoad height={250}>
-					<CardMedia
-						className={styles.media}
-						component={'img'}
-						height={250}
-						width={175}
-						src={'https://u.livechart.me/anime/3555/poster_image/a7f61a474b71763ed8be35d41407c611.png?style=small&format=jpg'}
-					/>
-				</LazyLoad>
-				<CardContent className={styles.content}>
-					Test
-					</CardContent>
-			</div>
-			<CardActionArea>
-			</CardActionArea>
+		<Card variant='outlined'>
+			<MainTitle name={'test123'} className={styles.title} />
+			<Grid container className={styles.root} spacing={2}>
+				<Grid item xs={12} sm={6}>
+					<LazyLoad>
+						<CardMedia
+							className={styles.media}
+							component={'img'}
+							width={175}
+							height={250}
+							src={'https://u.livechart.me/anime/3555/poster_image/a7f61a474b71763ed8be35d41407c611.png?style=small&format=jpg'}
+						/>
+					</LazyLoad>
+				</Grid>
+				<Grid item xs={12} sm={6}>
+						<CardContent>2</CardContent>
+				</Grid>
+			</Grid>
 		</Card>
 	);
 }
