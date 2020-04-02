@@ -9152,10 +9152,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-lazyload@^2.6.6:
-  version "2.6.6"
-  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.6.6.tgz#3e1b0122b7b505cef88984b4ef5428b28dea1be9"
-  integrity sha512-waNTEToArDTMOnSWsZMYZID6+CT2xz+Hs/e4XpyAtESYBQs2L6moKYbcA4BbI6l5/ZueQQrLB+OhINL7SHmAOw==
+react-lazyload@^2.6.7:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.6.7.tgz#9f5df01858ca11780ecf6be39ed9b17d845e7349"
+  integrity sha512-IauJMTOuO73egkBQ/brm0uVMMyxo/2LWCnnzjh7FlvxRMy4P1D5ZjZX9UBMCKRJUqJD441uT+n0hEXlfcjcm8g==
 
 react-router-dom@^5.1.2:
   version "5.1.2"
