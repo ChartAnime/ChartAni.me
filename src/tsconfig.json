@@ -1,0 +1,42 @@
+{
+    "extends": "@favware/ts-config",
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "module": "esnext",
+        "target": "ES6",
+        "declaration": false,
+        "declarationMap": false,
+        "incremental": false,
+        "skipLibCheck": true,
+        "preserveConstEnums": false,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+        "noEmit": true,
+        "lib": [
+            "dom",
+            "es2020"
+        ],
+        "baseUrl": ".",
+        "rootDir": ".",
+        "paths": {
+            "@Assets/*": [ "components/Assets/*" ],
+            "@Svgs/*": [ "components/Assets/Svgs/*" ],
+            "@Utils/*": [ "utils/*" ],
+            "@Atoms/*": [ "components/atoms/*" ],
+            "@Molecules/*": [ "components/molecules/*" ],
+            "@Organisms/*": [ "components/organisms/*" ],
+            "@Templates/*": [ "templates/*" ]
+        }
+    },
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "public/sw.js",
+        "public/workbox*.js"
+    ]
+}

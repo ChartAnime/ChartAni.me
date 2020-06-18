@@ -18,7 +18,11 @@ const useStyles = makeStyles(() =>
 export default (props: { name: string, className?: string }) => {
     const styles = useStyles();
 
-    return <h3 className={clsx(styles.mainTitle, props.className)}>
-        <a className={clsx(styles.name, props.className)}>{props.name}</a>
-    </h3>;
+    return (
+        <>
+            <h3 className={clsx(styles.mainTitle, props.className)}>
+                <a className={clsx(styles.name, props.className)}>{props.name}</a>
+            </h3>
+        </>
+    );
 }
