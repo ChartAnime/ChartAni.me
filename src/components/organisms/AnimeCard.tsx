@@ -44,7 +44,7 @@ export default () => {
 				}
 			`}</style>
 
-			<Card variant='outlined'>
+			<Card variant='outlined' className={'anime'}>
 				<MainTitle name={'test123'} className={styles.name} />
 				<Grid container className={styles.root} spacing={2}>
 					<Grid item xs={12} sm={6}>

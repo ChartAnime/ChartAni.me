@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, makeStyles, createStyles } from '@material-ui/core';
 import AnimeCard from '@Organisms/AnimeCard';
+import AnimeCardRow from '@Organisms/AnimeCardRow';
 
 const useStyles = makeStyles(() =>
 	createStyles({
@@ -20,6 +21,12 @@ export default () => {
         <AnimeCard />
         <AnimeCard />
         <AnimeCard />
+      </Grid>
+      <br/>
+      <Grid container direction={'row'}>
+        <AnimeCardRow />
+        <AnimeCardRow />
+        <AnimeCardRow />
       </Grid>
     </>
   )
