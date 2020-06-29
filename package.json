@@ -17,7 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-if": "^3.4.3",
-    "react-lazyload": "^2.6.8"
+    "react-lazyload": "^2.6.9"
   },
   "devDependencies": {
     "@favware/eslint-config-react-app": "^1.1.0",
