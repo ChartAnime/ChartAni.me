@@ -8,7 +8,7 @@
     "start": "next start src"
   },
   "dependencies": {
-    "@material-ui/core": "^4.10.2",
+    "@material-ui/core": "^4.11.0",
     "@mui-treasury/components": "^1.5.2",
     "clsx": "^1.1.1",
     "next": "9.4.4",
