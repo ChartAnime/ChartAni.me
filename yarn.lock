@@ -1256,19 +1256,19 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
-"@mui-treasury/components@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@mui-treasury/components/-/components-1.5.2.tgz#9d5aa9c03846e3e3300b2e72e5f82ead3c7328c0"
-  integrity sha512-2afShDDXAXgmm7iqPSx9xL0VZkgxPq9oAFdeB6MhB3vgIu94vx9wAHTjTbElPSzoF1XEUK1Sb78ppZv6wwQcMQ==
+"@mui-treasury/components@^1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@mui-treasury/components/-/components-1.9.1.tgz#a6c0d799d92688bc45b6e60d0e9f7f18ee159b4c"
+  integrity sha512-I7AE8VbYvMRZQqgi+n5pGA8VfYlV0AQGtOZEwViWRO9rOCwqSROtPqFTeZu6mV2JN9qJb8hXPwsSneZpbuHnIg==
   dependencies:
-    "@mui-treasury/styles" "^1.8.0"
+    "@mui-treasury/styles" "^1.13.0"
     "@mui-treasury/utils" "^0.4.1"
     use-deep-compare-effect "^1.3.0"
 
-"@mui-treasury/styles@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@mui-treasury/styles/-/styles-1.8.0.tgz#55b14228105c72dee80f55c87066965b2346779e"
-  integrity sha512-CWawp9HPuKZMNjRPkc4zydUGTfgH86JLX4aURoeNSOkLeazr42heAl6ImRB72lT7jrlw68SSSzq+yJSlSfzQqg==
+"@mui-treasury/styles@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@mui-treasury/styles/-/styles-1.13.0.tgz#94efce36fff4baa82c8d3b2cd6ce321efdadd429"
+  integrity sha512-5r1reUQgtFUE6jThvdnS7J7sjUI3RSzCudvyXfsxh0XCgzAvvNXMvZy/RCDBdVNa1gqw2QN37n5q3VwgKCQd6g==
   dependencies:
     "@mui-treasury/utils" "^0.4.1"
     color "^3.1.2"
