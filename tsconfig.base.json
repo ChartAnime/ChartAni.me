@@ -1,0 +1,21 @@
+{
+    "extends": "@favware/ts-config",
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "module": "esnext",
+        "target": "ES6",
+        "declaration": false,
+        "declarationMap": false,
+        "incremental": false,
+        "skipLibCheck": true,
+        "preserveConstEnums": false,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "es2020"
+        ]
+    }
+}
