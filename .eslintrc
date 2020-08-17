@@ -1,8 +1,0 @@
-{
-    "extends": [
-        "@favware/eslint-config-react-app"
-    ],
-    "rules": {
-        "@typescript-eslint/no-namespace": 0
-    }
-}
