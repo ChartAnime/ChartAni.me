@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AnimeCardComponent } from './info/card/anime-card/anime-card.component';
+import { AnimeCardComponent } from './info/anime-card/anime-card.component';
+import { DescriptionComponent } from './info/anime-card/description/description.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,10 +15,14 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { NgScrollbarModule } from 'ngx-scrollbar';
+import { AnimeCardModule } from './info/anime-card/anime-card.module';
+
 @NgModule({
 	declarations: [
 		AppComponent,
-		AnimeCardComponent
+		AnimeCardComponent,
+		DescriptionComponent
 	],
 	imports: [
 		BrowserModule,
@@ -28,7 +33,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 		MatChipsModule,
 		MatDividerModule,
 		MatIconModule,
-		FlexLayoutModule
+		FlexLayoutModule,
+		NgScrollbarModule,
+		AnimeCardModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

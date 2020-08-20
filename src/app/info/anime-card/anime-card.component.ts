@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-member-accessibility */
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,10 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class AnimeCardComponent {
 
-	@Input() image!: string;
-	@Input() title!: string;
-	@Input() author!: string;
-	@Input() description!: string;
-	@Input() labels!: Array<string>;
+	@Input() public image!: string;
+	@Input() public title!: string;
+	@Input() public author!: string;
+	@Input() public description!: string;
+	@Input() public labels!: Array<string>;
 
 }
