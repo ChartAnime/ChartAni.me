@@ -7,5 +7,6 @@
     "outDir": "./dist/out-tsc",
     "target": "es2015",
     "module": "es2020",
+    "experimentalDecorators": true
   }
 }
