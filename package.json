@@ -1,0 +1,8 @@
+{
+  "name": "ChartAni.me",
+  "version": "0.0.1",
+  "repository": "git@github.com:ChartAnime/ChartAni.me.git",
+  "author": "QuantumlyTangled <yo@quantumlytangled.com>",
+  "license": "MIT",
+  "private": true
+}
