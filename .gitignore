@@ -34,3 +34,4 @@ yarn-error.log*
 .vercel
 
 !(postcss|tailwind).config.js
+src/.next
